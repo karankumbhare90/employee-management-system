@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input-parent{
+        @apply relative flex space-x-3 items-center border border-gray-500 p-3 w-72 rounded;
+    }
+
+    .input-child{
+        @apply relative w-full flex items-center;
+    }
+
+    .input-label{
+        @apply absolute transition-all duration-400 px-1 text-[14px] font-semibold;
+    }
+
+    .input{
+        @apply bg-transparent focus:outline-none w-full mt-1;
+    }
+
+    .model-text-input{
+        @apply mb-3 flex flex-col space-y-2;
+    }
+}
